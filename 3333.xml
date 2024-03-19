@@ -1,0 +1,44 @@
+<include>
+    <user id="3333">
+
+    <gateways>
+      <gateway name="192.168.18.44">
+         <param name="username" value="3333"/>
+         <param name="password" value="123456"/>
+         <param name="vm-password" value="123456"/>
+         <param name="from-user" value=""/>
+         <param name="from-domain" value="192.168.18.44"/>
+         <param name="expire-seconds" value="60"/>
+         <param name="register" value="true"/>
+         <param name="retry_seconds" value="30"/>
+         <param name="extension" value="luna"/>
+         <param name="context" value="public"/>
+      </gateway>
+    </gateways>
+
+        <params>
+            <param name="password"
+                   value="123456" />
+            <param name="vm-password"
+                   value="123456" />
+        </params>
+
+        <variables>
+            <variable name="toll_allow"
+                      value="domestic,international,local" />
+            <variable name="accountcode"
+                      value="3333" />
+            <variable name="user_context"
+                      value="public" />
+            <variable name="effective_caller_id_name"
+                      value="Joao Paulo" />
+            <variable name="effective_caller_id_number"
+                      value="3333" />
+            <variable name="outbound_caller_id_name"
+                      value="$${outbound_caller_name}" />
+            <variable name="outbound_caller_id_number"
+                      value="$${outbound_caller_id}" />
+        </variables>
+
+    </user>
+</include>
